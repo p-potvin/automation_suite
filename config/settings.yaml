@@ -1,0 +1,20 @@
+multilogin:
+  api_key: "YOUR_MULTILogin_API_KEY"
+  base_url: "https://api.multilogin.com/v1"
+  profile_name: "StackOverflow_Profile_01"
+  os_type: "Windows 10"
+  browser: "Chrome"
+
+automation:
+  max_retries: 3
+  base_delay: 2.0
+  max_delay: 5.0
+  ip_rotation_interval: 5
+  captcha_api_key: "YOUR_2CAPTCHA_KEY" (Optional)
+
+targets:
+  - url: "https://stackoverflow.com"
+    form_selector: "form[name='login']"
+    username_selector: "input[name='login']"
+    password_selector: "input[name='password']"
+    submit_selector: "input[type='submit']"
